@@ -1,0 +1,62 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="container mt-4">
+
+ 
+    <div class="mb-3">
+      <label for="firstName" class="form-label">First Name:</label>
+      <input type="text" id="firstName" formControlName="firstName" class="form-control" >
+    </div>
+  
+    <div class="mb-3">
+      <label for="middleName" class="form-label">Middle Name:</label>
+      <input type="text" id="middleName" formControlName="middleName" class="form-control">
+    </div>
+  
+    <div class="mb-3">
+      <label for="lastName" class="form-label">Last Name:</label>
+      <input type="text" id="lastName" formControlName="lastName" class="form-control">
+    </div>
+  
+   
+  
+    <div class="mb-3">
+      <label for="gender" class="form-label">Gender:</label>
+      <select formControlName="gender" class="form-control">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+  
+    <div class="mb-3">
+      <label for="country" class="form-label">Country:</label>
+      <input type="text" id="country" formControlName="country" class="form-control">
+    </div>
+  
+    <div class="mb-3">
+      <label for="state" class="form-label">State:</label>
+      <input type="text" id="state" formControlName="state" class="form-control">
+    </div>
+  
+    <div class="mb-3">
+      <label for="dist" class="form-label">District:</label>
+      <input type="text" id="dist" formControlName="dist" class="form-control">
+    </div>
+  
+    <div class="mb-3">
+      <label for="pin" class="form-label">PIN:</label>
+      <input type="text" id="pin" formControlName="pin" class="form-control">
+    </div>
+  <div>
+    <button type="button" class="btn btn-success mr-2" (click)="onSave()">Save</button>
+  </div>
+
+  <div>
+<button type="button" class="btn btn-primary"  (click)="onNext()">Next</button>
+  </div>
+
+<div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    
+  </form>
+ 
